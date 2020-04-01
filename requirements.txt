@@ -1,0 +1,7 @@
+keyboard
+youtube_search
+pyttsx3
+speech_recognition
+pyaudio
+requests
+bs4
