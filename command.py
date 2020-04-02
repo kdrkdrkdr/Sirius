@@ -34,7 +34,7 @@ def CheckCommand(Text):
                     open_new(ytUrl)
                     break
                 except:
-                    continue
+                    TextSpeech('검색결과가 없습니다.')
 
         
         elif kWord == '날씨':

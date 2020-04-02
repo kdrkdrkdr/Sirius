@@ -24,7 +24,7 @@ def GetSoup(url, header, method, data=None):
 
 
 
-def CheckSpell(Text):
+def CheckSpellKo(Text):
     r = post(
         url = 'http://speller.cs.pusan.ac.kr/results',
         headers = {
@@ -47,20 +47,4 @@ def CheckSpell(Text):
 
     except ( IndexError ):
         return Text
-
-
-pos_dict = {
-    'Adverb': {'너무', '매우', }, 
-
-    'Noun': {'노래', '날씨', '검색', '뉴스', },
-
-    'Josa': {'는', '의', '이다', '입니다', '이', '이는', '를', '라', '라는', '좀', },
-
-    'Verb': {'하는', '하다', '하고'},
-    
-    'Adjective': {'예쁜', '예쁘다'},
-    
-    'Exclamation': {'우와'},
-}
-
 

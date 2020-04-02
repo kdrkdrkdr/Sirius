@@ -57,5 +57,6 @@ def NLPContent(Text):
     for c in RealCharList:
         RealContent += c[0]
     
+    
     return (LastNoun, RealContent)
 
